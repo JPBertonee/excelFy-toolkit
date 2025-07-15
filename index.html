@@ -4,57 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tu Starter Toolkit | excelFy</title>
-  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- AOS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="logo-header">
-    <img src="https://i.ibb.co/mKwMkwV/IMG-0036-2.jpg" alt="Logo excelFy" class="logo-img" />
-  </header>
+  <!-- Navigation -->
+  <nav class="navbar" data-aos="fade-down">
+    <div class="container">
+      <a href="#hero" class="logo">
+        <img src="https://i.ibb.co/mKwMkwV/IMG-0036-2.jpg" alt="Logo excelFy">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#discount">Descuento</a></li>
+        <li><a href="#ebook">eBook</a></li>
+        <li><a href="#template">Plantilla</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+      </ul>
+      <div class="menu-toggle"></div>
+    </div>
+  </nav>
 
-  <div class="progress">
-    <div class="step"><div class="circle"></div>Welcome</div>
-    <div class="step"><div class="circle"></div>Learn</div>
-    <div class="step"><div class="circle"></div>Apply</div>
-    <div class="step"><div class="circle"></div>Explore</div>
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section" data-aos="zoom-in">
+    <div class="hero-content">
+      <h1>Tu Starter Toolkit está listo</h1>
+      <p>¡Bienvenido a excelFy! Diseña, organiza y crece con nuestras herramientas.</p>
+      <a href="#discount" class="button">Empieza Ahora</a>
+    </div>
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Wave Divider -->
+  <div class="divider">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <path d="M0,0V100h1200V0L0,0Z"></path>
+    </svg>
   </div>
 
-  <h1>Tu Starter Toolkit está listo</h1>
-  <p class="subtitle">¡Bienvenido a excelFy! Tu kit exclusivo está preparado para ayudarte a planificar, organizar y crecer.</p>
-
-  <h2>1. Tu 10% de descuento</h2>
-  <div class="section discount-box">
+  <!-- Discount Section -->
+  <section id="discount" class="section discount-box" data-aos="fade-up">
+    <h2>1. Tu 10% de descuento</h2>
     <p class="code" id="code">START10</p>
     <button class="button" onclick="copyCode()">Copiar código</button>
     <p id="copiedMessage" class="copied-message">¡Código copiado!</p>
     <p>Usá este código en el checkout para recibir un 10% de descuento.</p>
+  </section>
+
+  <div class="divider flip">
+    <svg viewBox="0 0 1200 100" preserveAspectRatio="none">
+      <path d="M0,100V0h1200v100L0,100Z"></path>
+    </svg>
   </div>
 
-  <h2>2. Guía de Excel Essentials</h2>
-  <div class="section lavender">
+  <!-- eBook Section -->
+  <section id="ebook" class="section lavender" data-aos="fade-up">
+    <h2>2. Guía de Excel Essentials</h2>
     <a href="#" class="button">Descargar eBook</a>
-    <p>Aprendé técnicas prácticas para ahorrar tiempo, organizarte y trabajar de forma inteligente.</p>
-  </div>
+    <p>Aprendé técnicas prácticas para ahorrar tiempo y trabajar de forma inteligente.</p>
+  </section>
 
-  <h2>3. Plantilla de presupuesto</h2>
-  <div class="section green-box">
+  <!-- Template Section -->
+  <section id="template" class="section green-box" data-aos="fade-up">
+    <h2>3. Plantilla de presupuesto</h2>
     <a href="#" class="button">Abrir plantilla</a>
-    <p>Copiala a tu Google Drive y tomá control de tus finanzas mensuales en minutos.</p>
-  </div>
+    <p>Copiala a tu Google Drive y toma control de tus finanzas en minutos.</p>
+  </section>
 
-  <h2>¿Querés más plantillas?</h2>
-  <hr />
-  <a href="#" class="button full-width">Explorar colección completa</a>
-  <p class="note">Todos los botones son interactivos</p>
+  <!-- Testimonials -->
+  <section id="testimonials" class="section testimonial" data-aos="fade-up">
+    <h2>¿Qué dicen los usuarios?</h2>
+    <p>“Este toolkit hizo que todo fuera más fácil. Limpio, bello y súper práctico.”</p>
+    <p>— Nuevo usuario excelFy</p>
+  </section>
 
-  <div class="section testimonial">
-    “Este toolkit hizo que todo fuera más fácil. Limpio, bello y súper práctico.”<br />— Nuevo usuario excelFy
-  </div>
-
-  <footer>
+  <!-- Footer -->
+  <footer data-aos="fade-up">
     Creado por excelFy — Hojas inteligentes para logros cotidianos
   </footer>
 
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
