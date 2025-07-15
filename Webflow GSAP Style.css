@@ -1,0 +1,21 @@
+
+@import url('https://cdn.tailwindcss.com');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #1A1A1A;
+  scroll-behavior: smooth;
+}
+
+.font-display {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.logo-shadow {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.animate-fade-in {
+  opacity: 0;
+}

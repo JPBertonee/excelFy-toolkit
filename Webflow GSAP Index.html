@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tu Starter Toolkit | excelFy</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="px-6 lg:px-24 py-12">
+  <!-- Logo -->
+  <div class="flex justify-center mb-10">
+    <img src="https://i.ibb.co/mKwMkwV/IMG-0036-2.jpg" alt="Logo excelFy" class="w-28 rounded-xl logo-shadow animate-fade-in">
+  </div>
+
+  <!-- Header -->
+  <h1 class="text-4xl font-display text-center font-bold mb-4 animate-fade-in">Tu Starter Toolkit está listo</h1>
+  <p class="text-center text-gray-600 max-w-xl mx-auto mb-12 animate-fade-in">¡Bienvenido a excelFy! Tu kit exclusivo está preparado para ayudarte a planificar, organizar y crecer.</p>
+
+  <!-- Progreso -->
+  <div class="flex justify-center gap-6 mb-12 animate-fade-in">
+    <div class="text-center">
+      <div class="w-4 h-4 mx-auto rounded-full bg-green-400 mb-1"></div>
+      <span class="text-sm text-gray-400">Welcome</span>
+    </div>
+    <div class="text-center">
+      <div class="w-4 h-4 mx-auto rounded-full bg-green-400 mb-1"></div>
+      <span class="text-sm text-gray-400">Learn</span>
+    </div>
+    <div class="text-center">
+      <div class="w-4 h-4 mx-auto rounded-full bg-green-400 mb-1"></div>
+      <span class="text-sm text-gray-400">Apply</span>
+    </div>
+    <div class="text-center">
+      <div class="w-4 h-4 mx-auto rounded-full bg-gray-300 mb-1"></div>
+      <span class="text-sm text-gray-400">Explore</span>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <section class="mb-10 animate-fade-in">
+    <h2 class="text-2xl font-display mb-2">1. Tu 10% de descuento</h2>
+    <div class="bg-white border-2 border-dashed border-gray-300 rounded-xl p-6 text-center">
+      <p class="text-2xl font-bold text-green-800 mb-4" id="code">START10</p>
+      <button onclick="copyCode()" class="bg-green-800 hover:bg-green-900 text-white px-6 py-2 rounded-full transition">Copiar código</button>
+      <p id="copiedMessage" class="text-green-600 text-sm mt-2 hidden">¡Código copiado!</p>
+      <p class="mt-4 text-sm">Usá este código en el checkout para recibir un 10% de descuento.</p>
+    </div>
+  </section>
+
+  <section class="mb-10 animate-fade-in">
+    <h2 class="text-2xl font-display mb-2">2. Guía de Excel Essentials</h2>
+    <div class="bg-purple-100 rounded-xl p-6">
+      <a href="#" class="bg-purple-800 hover:bg-purple-900 text-white px-6 py-2 rounded-full inline-block mb-3 transition">Descargar eBook</a>
+      <p>Aprendé técnicas prácticas para ahorrar tiempo, organizarte y trabajar de forma inteligente.</p>
+    </div>
+  </section>
+
+  <section class="mb-10 animate-fade-in">
+    <h2 class="text-2xl font-display mb-2">3. Plantilla de presupuesto</h2>
+    <div class="bg-green-400 text-white rounded-xl p-6">
+      <a href="#" class="bg-white text-green-800 font-bold px-6 py-2 rounded-full inline-block mb-3 transition hover:bg-gray-100">Abrir plantilla</a>
+      <p>Copiala a tu Google Drive y tomá control de tus finanzas mensuales en minutos.</p>
+    </div>
+  </section>
+
+  <div class="text-center my-12 animate-fade-in">
+    <h2 class="text-2xl font-display mb-2">¿Querés más plantillas?</h2>
+    <a href="#" class="w-full bg-black text-white px-8 py-3 rounded-full inline-block font-display hover:scale-105 transition">Explorar colección completa</a>
+    <p class="text-xs text-gray-400 mt-2">Todos los botones son interactivos</p>
+  </div>
+
+  <!-- Testimonio -->
+  <blockquote class="italic text-center text-gray-600 bg-gray-50 py-6 px-4 rounded-xl animate-fade-in">
+    “Este toolkit hizo que todo fuera más fácil. Limpio, bello y súper práctico.”<br />
+    <span class="block mt-2">— Nuevo usuario excelFy</span>
+  </blockquote>
+
+  <footer class="text-center text-xs text-gray-400 mt-12 pt-6 border-t">Creado por excelFy — Hojas inteligentes para logros cotidianos</footer>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
